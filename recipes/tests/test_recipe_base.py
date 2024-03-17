@@ -16,14 +16,14 @@ class RecipeTestBase(TestCase):
         last_name='name',
         username='username',
         password='123456',
-        email='username@gmail.com'
+        email='username@gmail.com',
     ):
         return User.objects.create_user(
             first_name=first_name,
             last_name=last_name,
             username=username,
             password=password,
-            email=email
+            email=email,
         )
     
     def make_recipe(
